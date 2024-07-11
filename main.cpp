@@ -108,7 +108,6 @@ int main() {
     std::cout << "First derivative at u = 0.5: (" << derivatives[1][0] << ", " << derivatives[1][1] << ", " << derivatives[1][2] << ")" << std::endl << std::endl;
 
     // Intersection of BSCurve with a plane defined by point and normal
-    // Adjusted to a slightly different position to ensure intersection
     Point3D planePoint(1, 2, 0); // A point on the plane
     Vector3D planeNormal(0, 1, 0); // Normal to the plane
     DoubleVector intersections = bsCurve.intersectWithPlane(planePoint, planeNormal);
